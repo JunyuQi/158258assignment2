@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Merge Fruits</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Merge Fruits</h1>
+    </div>
+
+    <div class="content">
+        <h2>Problem Statement</h2>
+        <p>
+            In one orchard, Dada had already beaten all the fruit and divided it into different piles according to the different types of fruit.
+
+            Dada decided to combine all the fruits into a pile.
+
+            Each time Dada merges, he can merge two piles of fruit together, and the amount of stamina consumed is equal to the sum of the weights of the two piles of fruits.
+
+            It can be seen that all the fruits pass through n−1
+            After the merger, there was only one pile left.
+
+            The total amount of stamina consumed by Dada when merging the fruits is equal to the sum of the stamina expended for each merge.
+
+            Because it takes a lot of effort to bring the fruits home, Dada has to conserve as much energy as possible when combining the fruits.
+
+            It is assumed that each fruit weighs 1
+            Knowing the number of types of fruits and the number of each type of fruit, your task is to design a merge order that consumes the least amount of stamina to Dada and outputs this minimum amount of stamina.
+
+            For example, there are 3
+            Plant fruits, the number is 1, 2, 9
+
+            You can start by combining 1, 2
+            The heaps are merged, and the number of new heaps is 3
+            , which costs 3 stamina
+
+            The new heap is then merged with the original third heap to get a new heap with a number of 12
+            , costing 12 stamina
+
+            So Dada consumes a total of stamina = 3 + 12 = 15
+            
+
+            Can be proven 15
+            is the minimum physical cost.
+        </p>
+
+        <h2>Input</h2>
+        <p>
+            The input consists of two lines, the first of which is an integer n
+            , indicating the number of types of fruit.<br />
+
+            The second line contains n
+            integers, separated by spaces, i
+            integer ai
+            is the i
+            The number of fruits planted.
+
+        </p>
+
+        <h2>Output</h2>
+        <p>
+            The output consists of a line that contains only one integer, which is the minimum amount of physical cost.
+
+            The input data guarantees that this value is less than pow(2, 31)
+           
+        </p>
+
+        <h2>Sample Input</h2>
+        <pre>
+            3<br />
+            1 2 9 
+        </pre>
+
+        <h2>Sample Output</h2>
+        <pre>
+            15
+        </pre>
+    </div>
+</body>
+</html>

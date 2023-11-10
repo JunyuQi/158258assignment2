@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WebApplication1.Models.QuType>
+
+@{
+    ViewBag.Title = "QuTypes";
+}
+
+<h2>QuTypes</h2>
+
+<!--@Html.ActionLink("Create New", "Create")-->
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink(item.Name, "Index", "Questions", new {QuType = item.Name}, null)
+
+        </td>
+        <td>
+            <!--@Html.ActionLink("Edit", "Edit", new { id=item.ID }) |-->
+            <!--@Html.ActionLink("Details", "Details", new { id=item.ID }) |-->
+            <!--@Html.ActionLink("Delete", "Delete", new { id=item.ID })-->
+        </td>
+    </tr>
+}
+
+</table>

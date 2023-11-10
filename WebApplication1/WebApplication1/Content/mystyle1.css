@@ -1,0 +1,36 @@
+﻿.jumbotron {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.col-md-6 {
+    margin-bottom: 20px;
+}
+
+.additional-content {
+    margin-top: 20px;
+}
+
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    width: 48%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.article img {
+    max-width: 100%; /* Set the maximum width to the container width */
+    height: auto; /* Maintain the aspect ratio */
+}

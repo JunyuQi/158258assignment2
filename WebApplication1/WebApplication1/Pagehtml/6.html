@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Linear Dynamic Programming</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Linear Dynamic Programming</h1>
+    </div>
+
+    <div class="content">
+        <h2>Problem Statement</h2>
+        <p>
+            Given a number triangle as shown in the figure below, starting from the top, at each node, you can choose to move to the node at the bottom left or to the node at the bottom right, until you go to the bottom, and ask to find a path so that the sum of the numbers on the path is the largest.
+            <br />7<br />
+            3   8<br />
+            8   1   0<br />
+            2   7   4   4<br />
+            4   5   2   6   5<br />
+        </p>
+
+        <h2>Input</h2>
+        <p>
+            The first line contains the integer n
+            , representing the number of layers of the number triangle.<br />
+
+            Next n
+            rows, each containing a number of integers, where i line represents the number triangle i
+            integer that the layer contains.
+
+        </p>
+
+        <h2>Output</h2>
+        <p>
+            Outputs an integer representing the sum of the largest path digits.
+        </p>
+
+        <h2>Sample Input</h2>
+        <pre>
+            5<br />
+            7<br />
+            3 8<br />
+            8 1 0 <br />
+            2 7 4 4<br />
+            4 5 2 6 5
+        </pre>
+
+        <h2>Sample Output</h2>
+        <pre>
+            30
+        </pre>
+    </div>
+</body>
+</html>

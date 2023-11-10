@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to CodeProgramming!</h1>
+    <p class="lead">The more you practice, the more you improve.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>About CodeProgramming</h2>
+        <p>
+            CodeProgramming is a website dedicated to providing programming resources, tutorials, and articles.
+            Whether you're a beginner or an experienced developer, you'll find valuable content here.
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h2><a href="https://localhost:44366/QuTypes">Get Started</a></h2>
+        <p>
+            Start exploring our articles and tutorials. Learn, practice, and improve your programming skills.
+            If you have any questions or need assistance, don't hesitate to <a href="@Url.Action("Contact", "Home")">contact us</a>.
+        </p>
+    </div>
+</div>
+
+<div class="additional-content">
+    <h2>Latest Articles</h2>
+    <div class="article-list">
+        <div class="article">
+            <h3>Binary tree</h3>
+
+            <p>
+                Binary tree
+                definition
+                A binary tree is a finite set of n(n>=0) nodes, which is either an empty set (called an empty binary tree) or consists of a root node and two disjoint left and right subtrees, called root nodes.
+            </p>
+            <p>
+                Binary tree features
+                According to the definition of binary tree and the graphical analysis, the binary tree has the following characteristics:
+                Each node has a maximum of two subtrees, so there are no nodes in the binary tree with degrees greater than 2.
+                The left and right subtrees are in order, and the order cannot be reversed.
+                Even if there is only one subtree at a node in the tree, distinguish whether it is a left or right subtree.
+            </p>
+            <p>
+                Binary tree propertiesIf a complete binary tree with n nodes is numbered from top to bottom and from left to right, any node numbered i in the complete binary tree has the following characteristics:
+                If i=1, then the node is the root of the binary tree and has no parents, otherwise, the node numbered [i/2] is the node of both parents;
+                If 2i>n, then the node has no left child, otherwise, the node numbered 2i is its left child's node;
+                If 2i+1>n, then the node has no right child node, otherwise, the node numbered 2i+1 is its right child node.
+            </p>
+            <img src="~/Content/article1.png" alt="Article Image 1" />
+
+        </div>
+        <div class="article">
+            <h3>Big data analytics</h3>
+            <p>Big data analytics is the use of processes and technologies to combine and analyze massive data sets with the goal of identifying patterns and developing actionable insights. This helps business leaders make faster, better, data-driven decisions that increase efficiency, revenue, and profits.</p>
+            <p>
+                How does big data analytics work? Here's what CPDA data analysts as professionals understand:
+            </p>
+            <p>
+                The main steps of big data analytics are goal definition, data collection, data integration and management, data analysis, and results sharing. The advanced analytics involved in exploring and analyzing large volumes of semi-structured and unstructured data requires an end-to-end big data analytics platform or a broad toolset applied by a data analyst, data scientist, or engineer.
+            </p>
+            <p>
+                Modern big data analytics includes the use of artificial intelligence (AI) and machine learning to automate processes, provide insightful recommendations, perform predictive analytics, and allow natural language interactions. Real-time big data analytics involves processing data as it arrives, which can further speed up decisions or trigger actions or notifications.
+            </p>
+            <img src="~/Content/article2.png" alt="Article Image 2" />
+
+        </div>
+    </div>
+</div>

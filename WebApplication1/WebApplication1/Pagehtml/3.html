@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Linked List</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Linked List</h1>
+    </div>
+
+    <div class="content">
+        <h2>Problem Statement</h2>
+        <p>
+            Implement a singly linked list, the linked list is initially empty, and supports three operations:
+
+            insert a number into the linked list header;<br />
+            Delete section k the number after the number of insertions;<br />
+            In k inserts a number after the inserted number.
+        </p>
+
+        <h2>Input</h2>
+        <p>
+            The first line contains the integer M
+            to indicate the number of operations.<br />
+
+            Next M
+            Lines, each of which contains one action command, which may be one of the following types:<br />
+
+            H x indicates the insertion of a number x into the header of the linked list<br />
+            D k, which means that kth is deleted
+            the number after the number of insertions (when k
+            is 0
+            , the head node is deleted)<br />
+            I k x, which means at k
+            inserts a number x after the inserted number
+            (In this operation k
+            are greater than 0）<br />
+        </p>
+
+        <h2>Output</h2>
+        <p>
+            A total row outputs the entire linked list from beginning to end.
+        </p>
+
+        <h2>Sample Input</h2>
+        <pre>
+            10<br />
+            H 9<br />
+            I 1 1<br />
+            D 1<br />
+            D 0<br />
+            H 6<br />
+            I 3 6<br />
+            I 4 5<br />
+            I 4 5<br />
+            I 3 4<br />
+            D 6
+        </pre>
+
+        <h2>Sample Output</h2>
+        <pre>
+            6 4 6 5
+        </pre>
+    </div>
+</body>
+</html>
